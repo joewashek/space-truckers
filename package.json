@@ -1,6 +1,6 @@
 {
-  "name": "friends",
-  "version": "0.0.0",
+  "name": "space-truckers-jfw",
+  "version": "1.0.0",
   "scripts": {
     "dev": "vite --open",
     "build": "tsc && vite build",
@@ -11,10 +11,17 @@
     "src/@types"
   ],
   "devDependencies": {
-    "typescript": "^5.3.3",
-    "vite": "^5.0.11"
+    "@babylonjs/gui": "^7.42.0",
+    "@babylonjs/inspector": "^7.42.0",
+    "@babylonjs/loaders": "^7.42.0",
+    "@babylonjs/materials": "^7.42.0",
+    "@babylonjs/post-processes": "^7.42.0",
+    "@babylonjs/procedural-textures": "^7.42.0",
+    "@babylonjs/serializers": "^7.42.0",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.6"
   },
   "dependencies": {
-    "babylonjs": "^6.38.0"
+    "babylonjs": "^7.42.0"
   }
 }
