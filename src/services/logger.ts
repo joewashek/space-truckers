@@ -10,7 +10,7 @@ class ConsoleProxy {
         this._consoleIsPresent = console ? true : false;
     }
 
-    public logInfo(message: string) {
+    public logInfo(message: string, context: any = undefined) {
         const logObj: LogObject = { type: "INFO", message };
         if (this._consoleIsPresent) {
             this.console.log(logObj);
@@ -19,7 +19,7 @@ class ConsoleProxy {
         this._messageBuffer.push(message);
     }
 
-    public logWarning(message: string) {
+    public logWarning(message: string, context: any = undefined) {
         const logObj: LogObject = { type: "WARN", message };
         if (this._consoleIsPresent) {
             this.console.warn(logObj);
@@ -28,7 +28,7 @@ class ConsoleProxy {
         this._messageBuffer.push(message);
     }
 
-    public logError(message: string) {
+    public logError(message: string, context: any = undefined) {
         const logObj: LogObject = { type: "ERROR", message };
         if (this._consoleIsPresent) {
             this.console.error(logObj);
@@ -37,7 +37,7 @@ class ConsoleProxy {
         this._messageBuffer.push(message);
     }
 
-    public logFatal(message: string) {
+    public logFatal(message: string, context: any = undefined) {
         const logObj: LogObject = { type: "FATAL", message };
         if (this._consoleIsPresent) {
             this.console.error(logObj);
